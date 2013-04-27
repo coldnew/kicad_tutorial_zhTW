@@ -1,0 +1,99 @@
+#+TITLE: KiCAD 正體中文教學
+#+AUTHOR: 李彥瑾 <coldnew>
+#+EMAIL: coldnew.tw@gmail.com
+#+LaTeX_CLASS: coldnew-article
+#+OPTIONS: toc:nil skip:nil ^:nil  todo:nil
+#+EXPORT_TITLE: nil
+
+
+# 封面
+#+BEGIN_LaTeX
+  \thispagestyle{empty}
+  \pagenumbering{roman}
+  \vspace*{4cm}
+  \begin{center}
+    \includegraphics[width=60mm]{./pict/kicad_logo.png} \\
+    \noindent \textsf{\textbf{\Huge KiCAD 正體中文教學}}{\Large \par}
+    \vspace{1cm}
+    \noindent {\large Copyright \copyright \ 2012 Yen-Chin, Lee <coldnew>}
+    \noindent \vspace{0.8cm}
+    \noindent \vspace{1.0cm}
+  \end{center}
+  \newpage{}
+#+END_LaTeX
+
+
+# 版權宣告
+#+BEGIN_LaTeX
+  \noindent
+  \textsf{\textbbf{\Large Copyright Notice}}{\Huge \par} \\
+  \noindent Copyright \copyright \ 2011-2012, by Yen-Chin, Lee <coldnew.tw@gmail.com> \\
+  Permission is granted to copy, distribute and/or modify this document
+  under the terms of the GNU Free Documentation License, Version 1.3 or
+  any later version published by the Free Software Foundation; with no
+  Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+  Modified versions of this document will include the current version date
+  and all the prior version dates on which the document is based,
+  immediately following the copyright notice. A copy of the license is
+  available from the GNU project website at the following URL.
+  http://www.gnu.org/licenses/fdl.html
+#+END_LaTeX
+
+# 版本號與更新時間
+#+BEGIN_LaTeX
+  \vspace{2cm}
+  \noindent Version: 0.2 \\
+  \noindent Publication date: \today \\
+  \noindent Language: Traditional Chinese
+  \newpage{}
+#+END_LaTeX
+
+# 目錄
+#+BEGIN_LaTeX
+  \renewcommand\contentsname{目錄}
+  \tableofcontents{...}
+  \addtocontents{toc}{~\hfill\textbf{頁碼}\par}
+  \newpage{}
+  \pagenumbering{arabic}
+#+END_LaTeX
+
+
+* 關於 KiCAD
+** KiCAD 是什麼
+
+KiCAD 是一款開源的 EDA 軟體，使用 C++以及 wxWidget 圖形庫進行開發，能運行於各大主流作業系統
+如 Wind、MMMacOSX 以及 Linux。
+
+在進行 PCB 電路圖的佈局時，有許多知名的軟體可以使用，比如 eagle 和 protel，但是這些軟體
+不是價格昂貴，就是免費版的有限定能佈局的電路圖大小，因此比較不適合學生使用。
+
+** 如何取得 KiCAD
+
+* 安裝 KiCAD
+** 安裝 KiCAD 於 Windows XP
+** 安裝 KiCAD 於 Windows 7
+** 安裝 KiCAD 於 MacOS X
+** 安裝 KiCAD 於 Ubuntu Linux
+#+begin_src sh
+  apt-get install kicad
+#+end_src
+** 安裝 KiCAD (使用原始碼安裝)
+
+
+* 建立新的專案
+* 建立電路圖檔
+* PCB 佈局
+* 產生 Gerber 檔案
+** Gerber 檔是什麼？
+** 如何產生 Gerber 檔
+
+
+
+* COMMENT 本文件的特殊設定
+# Local Variables:
+# org-export-latex-title-command: ""
+# End:
+
+
+
+
